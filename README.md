@@ -6,5 +6,5 @@ python tracking.py
 ![Demo](output.gif)
 
 # Technology
-yolo(detect vehicle)
-ocsort(tracking vehicle)
+yolo(detect vehicle)<br />
+Ocsort(tracking vehicle)
