@@ -3,6 +3,4 @@
 python tracking.py
 ```
 # Demo optimize plate recognition 
-```
-
-```
+![Demo](output.gif)
