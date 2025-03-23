@@ -26,9 +26,9 @@ def pre_process(img, imgsz, stride, pt):
 
 tracker = OCSort(det_thresh=0.45, iou_threshold=0.3, use_byte=False)
 
-video = cv2.VideoCapture("/home/congnt/congnt/ATIN/test/video_test/demo.mp4")
+video = cv2.VideoCapture("/home/congnt/congnt/ATIN/test/video_test/demo.mp4") # replace with your video path
 
-model = create_model(weights_detect='/home/congnt/congnt/ATIN/wrong_lane/yolov5/weights/anh_hoai.pt')
+model = create_model(weights_detect='weights/demo.pt')
 stride, names, pt = model.stride, model.names, model.pt
 imgsz = check_img_size((640,640), s=stride)
 
