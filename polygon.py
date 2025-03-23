@@ -6,7 +6,6 @@ def draw_polygon(frame, polygon, color=(0, 255, 0), thickness=2):
     pts = pts.reshape((-1, 1, 2))
     cv2.polylines(frame, [pts], True, color, thickness)
 def calculate_centroid(polygon):
-    """Tính toán tâm của polygon."""
     M = cv2.moments(np.array(polygon))
     cx = int(M['m10'] / M['m00'])
     cy = int(M['m01'] / M['m00'])
